@@ -1,1 +1,82 @@
 # apply-cdl-job
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CDL Class A Driving Job Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>CDL Class A Driving Job Application</h2>
+    <form action="https://formspree.io/f/mnnvvnov" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" required>
+
+      <label for="position">Which position are you applying for?</label>
+      <select name="position" required>
+        <option value="">Select</option>
+        <option value="Lease to Purchase Program">Lease to Purchase Program</option>
+        <option value="Company Driver Position">Company Driver Position</option>
+      </select>
+
+      <label for="cdl">Do you have a valid CDL Class A?</label>
+      <select name="cdl" required>
+        <option value="">Select</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <label for="message">Optional Message</label>
+      <textarea name="message" rows="4" placeholder="Write a short message (optional)"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
