@@ -9,14 +9,16 @@
       font-family: Arial, sans-serif;
       background: #c9d4d4;
       padding: 20px;
+      margin: 0;
     }
     .container {
-      max-width: 600px;
-      margin: auto;
+      max-width: 1200px;
+      margin: 30px auto;
       background: white;
-      padding: 30px;
+      padding: 50px;
       border-radius: 30px;
       box-shadow: 0 0 10px #ccc;
+      min-height: 100vh;
     }
     h2 {
       text-align: center;
@@ -32,12 +34,14 @@
       margin-bottom: 15px;
       border: 1px solid #ccc;
       border-radius: 5px;
+      font-size: 16px;
     }
     button {
       background: #007bff;
       color: white;
       border: none;
       cursor: pointer;
+      font-size: 16px;
     }
     button:hover {
       background: #0056b3;
@@ -64,12 +68,20 @@
         <option value="Company Driver Position">Company Driver Position</option>
       </select>
 
-      <label for="cdl">How much experience you have (OTR or Regional)?</label>
-      <select name="cdl" required>
+      <label for="experience">How much experience do you have (OTR or Regional)?</label>
+      <select name="experience" required>
         <option value="">Select</option>
         <option value="0-6 months">0-6 months</option>
         <option value="6-12 months">6-12 months</option>
         <option value="1+ year">1+ year</option>
+      </select>
+
+      <label for="SAP">Are you in SAP?</label>
+      <select name="SAP" required>
+        <option value="">Select</option>
+        <option value="No">No</option>
+        <option value="STEP 5">STEP 5</option>
+        <option value="STEP 6">STEP 6</option>
       </select>
 
       <label for="message">Optional Message:</label>
